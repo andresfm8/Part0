@@ -1,0 +1,53 @@
+Exercise 0.4:
+This is assuming that the website has been already loaded.
+
+--User types out a note and clicks save
+Server:
+Post Request to https://fullstack-exampleapp.herokuapp.com/new_note
+--Javascript code takes care of adding and sending the data into the JSON file
+Server:
+Get Request to https://fullstack-exampleapp.herokuapp.com/notes
+--HTML is called
+Client side confirms that HTML is received
+Server:
+Get Request to https://fullstack-exampleapp.herokuapp.com/main.css
+--main.css is called
+Client side confirms that css is received
+Server:
+Get Request to https://fullstack-exampleapp.herokuapp.com/main.js
+--main.js is called
+Client side confirms that js is received
+--JS code is executed so JSON data can be retrieved and displayed
+Server:
+Get Request to https://fullstack-exampleapp.herokuapp.com/data.json
+Client side confirms that JSON data is received
+--Browser displays updated information
+
+Exercise 0.5:
+When user request the url in the browser
+Server:
+GET https://fullstack-exampleapp.herokuapp.com/spa
+--HTML is called
+Client confirms that HTML is received
+Server:
+GET https://fullstack-exampleapp.herokuapp.com/main.css
+--main.css is called
+Client confirms that CSS is received
+Server:
+GET https://fullstack-exampleapp.herokuapp.com/spa.js
+--spa.js is called
+Client confirms that JS is received
+--JS code is executed so JSON data can be retrieved and displayed
+Server:
+GET https://fullstack-exampleapp.herokuapp.com/data.json
+--data.json is called
+Client confirms that JSON is received
+--Browser displays information inside data.json
+
+Exercise 0.6
+
+--User types out a note and clicks save
+Server:
+Post Request to https://fullstack-exampleapp.herokuapp.com/new_note_spa
+--Javascript code takes care of adding and sending the data into the JSON file
+--LI with the new data is dynamically added without reloading the page
